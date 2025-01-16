@@ -1,0 +1,20 @@
+.sidebar {
+    background-color: #2470dc !important;
+    border: 1px solid #2470dc !important;
+}
+
+.sidebar .nav-link {
+    color: white !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    background-color: #2470dc !important;
+    border: 1px solid #2470dc !important;
+}
+
+.items div {
+    width: 45%;
+    height: 180px;
+    margin-bottom: 12px;
+}

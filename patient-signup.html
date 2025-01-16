@@ -1,78 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign into Vendeta</title>
-    <link rel="stylesheet" href="wow/matthieua-WOW-07a2b50/css/libs/animate.css">
-    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign into Vendeta</title>
+  <link rel="stylesheet" href="wow/matthieua-WOW-07a2b50/css/libs/animate.css">
+  <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
 </head>
-<body style="background-color: #0c1c48;"> 
-    <div class="form">
-        <div>
-            <h1 class="mb-4 wow animate fadeInUp">Welcome to <span class="ven">Medify</span>.</h1>
-            <form action="" class="mt-4 wow animate fadeInDown needs-validation">
-                <div class="questions" id="firstQ">
-                    <p>Tell us about you.</p>
-                    <div class="form-floating h-25">
-                        <input type="text" class="form-control w-100 mb-4" placeholder="e.g John" required>
-                        <label for="" class="text-secondary">First Name</label>
-                    </div>
 
-                    <div class="form-floating">
-                        <input type="text" class="form-control w-100 mb-4" placeholder="e.g Doe" required>
-                        <label for="" class="text-secondary">Last Name</label>
-                    </div>
-                    
-                    <div class="form-floating">
-                        <input type="text" class="form-control w-100 mb-4" placeholder="e.g Username" required>
-                        <label for="" class="text-secondary">Username</label>
-                    </div>
-                    
-                    <div class="form-floating">
-                        <input type="date" class="form-control w-100 mb-4" required>
-                        <label for="" class="text-secondary">Date of Birth</label>
-                    </div>
-                    
-                    <div class="form-select">
-                        <select class="form-control" required>
-                            <option>Male</option>
-                            <option>Female</option>
-                            <option>Other</option>
-                          </select>
-                    </div>
-                </div>
+<body style="background-color: #0c1c48;">
+  <div class="form">
+    <div>
+      <h1 class="mb-4 wow animate fadeInUp pt-5">Welcome to <span class="ven">Medify</span>.</h1>
+      <form action="" class="mt-4 wow animate fadeInDown needs-validation">
+        <div class="questions" id="firstQ">
+          <p>Tell us about you.</p>
+          <div class="form-floating h-25">
+            <input type="text" class="form-control w-100 mb-4" placeholder="e.g John" required>
+            <label for="" class="text-secondary">First Name</label>
+          </div>
 
-                <div class="questions wow animate fadeInLeft" id="secQ">
-                    <p>How can we reach you?</p>
-                    <input type="email" class="form-control w-100 mb-4" placeholder="e.g johndoe@email.com" required>
-                    <input type="email" class="form-control w-100 mb-4" placeholder="e.g 11 Hugh street" required>
-                    <input type="number" class="form-control w-100 mb-4" placeholder="e.g +1 (409)-832-3913" required>
-                </div>
+          <div class="form-floating">
+            <input type="text" class="form-control w-100 mb-4" placeholder="e.g Doe" required>
+            <label for="" class="text-secondary">Last Name</label>
+          </div>
 
-                <div class="questions wow animate fadeInLeft" id="thirdQ">
-                    <p>Let's secure your account!</p>
-                    <input type="text" class="form-control w-100 mb-4" placeholder="Input your password" required>
-                    <input type="text" class="form-control w-100 mb-4" placeholder="Confirm password" required>
-                </div> 
+          <div class="form-floating">
+            <input type="text" class="form-control w-100 mb-4" placeholder="e.g Username" required>
+            <label for="" class="text-secondary">Username</label>
+          </div>
 
-                <button class="btn text-white mb-3 prev wow animate fadeInUp">Prev</button>
-                <button class="btn text-white mb-3 next wow animate fadeInUp">Next</button>
-                <a href="#" class="btn secondbtn w-100 text-white btn-lg mb-3">Sign In</a>
-                <p class="wow animate fadeInLeft">Have an account already? <a href="/patient-login.html">Signup</a></p>
-            </form>
+          <div class="form-floating">
+            <input type="date" class="form-control w-100 mb-4" required>
+            <label for="" class="text-secondary">Date of Birth</label>
+          </div>
+
+          <div class="form-select">
+            <select class="form-control" required>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Other</option>
+            </select>
+          </div>
         </div>
-        <div class="image">
-            <img src="/images/doc2.png" alt="model">
+
+        <div class="questions wow animate fadeInLeft" id="secQ">
+          <p>How can we reach you?</p>
+          <input type="email" class="form-control w-100 mb-4" placeholder="e.g johndoe@email.com" required>
+          <input type="email" class="form-control w-100 mb-4" placeholder="e.g 11 Hugh street" required>
+          <input type="number" class="form-control w-100 mb-4" placeholder="e.g +1 (409)-832-3913" required>
         </div>
+
+        <div class="questions wow animate fadeInLeft" id="thirdQ">
+          <p>Let's secure your account!</p>
+          <input type="text" class="form-control w-100 mb-4" placeholder="Input your password" required>
+          <input type="text" class="form-control w-100 mb-4" placeholder="Confirm password" required>
+        </div>
+
+        <button class="btn text-white mb-3 prev wow animate fadeInUp">Prev</button>
+        <button class="btn text-white mb-3 next wow animate fadeInUp">Next</button>
+        <a href="#" class="btn secondbtn w-100 text-white btn-lg mb-3">Sign In</a>
+        <p class="wow animate fadeInLeft">Have an account already? <a href="/patient-login.html">Signup</a></p>
+      </form>
     </div>
+    <div class="image">
+      <img src="/images/doc2.png" alt="model">
+    </div>
+  </div>
 
-    <script src="/wow/matthieua-WOW-07a2b50/dist/wow.min.js"></script>
-    <script>
-      new WOW().init()
-    </script>
-    <script src="patient-signup.js"></script>
-    <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/wow/matthieua-WOW-07a2b50/dist/wow.min.js"></script>
+  <script>
+    new WOW().init()
+  </script>
+  <script src="patient-signup.js"></script>
+  <script src="bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

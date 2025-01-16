@@ -97,11 +97,11 @@ p.country {
     border: none !important;
 }
 
-.fa-heart-pulse {
+.fa-heart-pulse, .fa-users {
     color: #243D82 !important;
 }
 
-.fa-droplet {
+.fa-droplet, .fa-file {
     color: rgb(0, 128, 255);
 }
 
