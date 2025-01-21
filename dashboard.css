@@ -341,6 +341,16 @@ body {
   border-radius: 20px;
 }
 
+/* Ensure 'all-list' is visible by default */
+#all-list {
+  display: block;
+}
+
+#contain-all {
+  display: none;
+}
+
+
 .fa-users {
   color: gray;
 }
@@ -482,4 +492,10 @@ td.severity {
 .content.active {
   display: block;
   /* Show only the active section */
+}
+
+.edit {
+  position: absolute;
+  left: 90%;
+  /* bottom: 20%; */
 }

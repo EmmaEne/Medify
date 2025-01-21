@@ -1,11 +1,13 @@
-const navLinks = document.querySelectorAll(".offcanvas-body .nav-item");
-const pageTag = document.querySelector(".page-tag");
-const plusBtn = document.querySelector(".fa-plus");
-const overlay = document.querySelector(".overlay");
-const reservationDetails = document.querySelector(".reservation-details");
-const close = document.querySelector(".close");
-const myNavItem = document.querySelectorAll('.nav-link[data-target]'); // Target nav links
-const sections = document.querySelectorAll('.content'); // Target sections
+let navLinks = document.querySelectorAll(".offcanvas-body .nav-item");
+let pageTag = document.querySelector(".page-tag");
+let plusBtn = document.querySelectorAll(".fa-plus");
+let overlay = document.querySelector(".overlay");
+let reservationDetails = document.querySelector(".reservation-details");
+let close = document.querySelector(".close");
+let myNavItem = document.querySelectorAll('.nav-link[data-target]'); // Target nav links
+let sections = document.querySelectorAll('.content'); // Target sections
+let view = document.querySelectorAll(".view")
+
 
 for (let i = 0; i < navLinks.length; i++) {
   navLinks[i].addEventListener("click", () => {
@@ -13,7 +15,9 @@ for (let i = 0; i < navLinks.length; i++) {
   })
 }
 
-plusBtn.addEventListener("click", () => {
+console.log(plusBtn);
+
+plusBtn[1].addEventListener("click", () => {
   overlay.style.display = "block";
   reservationDetails.style.display = "block";
 })
@@ -30,6 +34,8 @@ myNavItem.forEach(link => {
   link.addEventListener('click', event => {
     event.preventDefault(); // Prevent default behavior
 
+    console.log(link);
+    
     // Get the target section ID
     const targetId = link.getAttribute('data-target');
     console.log(targetId);
@@ -49,3 +55,13 @@ myNavItem.forEach(link => {
 
   });
 });
+
+
+for (let index = 0; index < view.length; index++) {
+  let containAll = document.getElementById("contain-all");
+  let allList = document.getElementById("all-list");
+  view[index].addEventListener('click', ()=>{
+    containAll.style.display = 'block';
+    allList.style.display = 'none';
+  })
+}
