@@ -267,7 +267,7 @@
   </svg>
 
   <!-- Headers -->
-  <header class="navbar header flex-md-nowrap p-0" data-bs-theme="dark">
+  <header class="navbar header flex-md-nowrap p-0 sticky-top" data-bs-theme="dark">
     <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white">Medify</a>
 
     <div class="d-flex header-content flex-wrap flex-md-nowrap align-items-center">
@@ -462,62 +462,24 @@
             </div>
 
             <div id="Patient-information" class="tab-pane fade show active">
-              <div class="row container-fluid border mt-3 patient-info">
-                <div
-                  class="diagram col-lg-4 border p-0 m-0 d-flex flex-column pt-5 justify-content-center text-center">
-                  <h5>Odontogram</h5>
-                  <img src="/images/teeth.png" alt="" class="p-0 m-0 m-auto">
+              <div class="card shadow-sm">
+                <div class="card-header">
+                  <h6>User Details</h6>
                 </div>
-                <div class="text col-lg-8 pt-5 ps-5">
-                  <h5> <i class="fa fa-teeth" style="color: #243D82;"></i> Macillary left lateral incisor</h5>
-
-                  <table class="table patient-table table-borderless mt-4">
-                    <thead>
-                      <tr>
-                        <th>Condition</th>
-                        <th>Treatments</th>
-                        <th>Dentist</th>
-                        <th><span class="badge rounded-pill text-success float-end"><i class="fa fa-check"></i>
-                            Done</span></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Caries</td>
-                        <td>Tooth filling</td>
-                        <td colspan="2">Dr. Muntaha Riyaz</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4" class="border p-3 severity"><i
-                            class="fa fa-file-lines text-secondary me-1"></i>
-                          Advanced decay</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-                  <table class="table patient-table table-borderless mt-4">
-                    <thead>
-                      <tr>
-                        <th>Condition</th>
-                        <th>Treatments</th>
-                        <th>Dentist</th>
-                        <th><span class="badge rounded-pill text-warning float-end"><i class="fa fa-hourglass"></i>
-                            Pending</span></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Caries</td>
-                        <td>Tooth filling</td>
-                        <td colspan="2">Dr. Muntaha Riyaz</td>
-                      </tr>
-                      <tr>
-                        <td colspan="4" class="border p-3 severity"><i
-                            class="fa fa-file-lines text-secondary me-1"></i>
-                          Decay in pulp</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                <div class="card-body">
+                  <form action="" class="mt-4 w-75">
+                    <label for="name">Firstname</label>
+                    <input type="text" class="form-control mb-4" placeholder="e.g John" value="Faouzia" required>
+                    <label for="age">Age</label>
+                    <input type="number" class="form-control mb-4" placeholder="e.g 39yrs" value="39" required>
+                    <label for="Weight">Weight</label>
+                    <input type="text" class="form-control mb-4" placeholder="e.g 83kg" value="83kg" required>
+                    <label for="height">Height</label>
+                    <input type="text" class="form-control mb-4" placeholder="e.g 178cm" value="178cm" required>
+                    <label for="Bo">Blood group</label>
+                    <input type="text" class="form-control mb-4" placeholder="e.g O-" value="O+" required>
+                    <button class="btn first btn-md">Submit</button>
+                </form>
                 </div>
               </div>
             </div>

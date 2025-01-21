@@ -6,7 +6,10 @@ let reservationDetails = document.querySelector(".reservation-details");
 let close = document.querySelector(".close");
 let myNavItem = document.querySelectorAll('.nav-link[data-target]'); // Target nav links
 let sections = document.querySelectorAll('.content'); // Target sections
-let view = document.querySelectorAll(".view")
+let view = document.querySelectorAll(".view");
+let details = document.querySelector(".appointment-details");
+let detailsBtn = document.querySelector(".details-btn");
+let appointmentList = document.querySelector(".listAll");
 
 
 for (let i = 0; i < navLinks.length; i++) {
@@ -65,3 +68,8 @@ for (let index = 0; index < view.length; index++) {
     allList.style.display = 'none';
   })
 }
+
+detailsBtn.addEventListener('click', ()=>{
+  appointmentList.style.display = 'none';
+  details.style.display = 'block';
+});
